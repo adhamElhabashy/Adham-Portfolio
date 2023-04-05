@@ -330,7 +330,7 @@ header .container .links li a {
 }
 @media (max-width: 767px) {
   .landing .intro-text {
-    width: 100%;
+    width: 95%;
   }
   .landing .intro-text h2 {
     font-size: 25px !important;
