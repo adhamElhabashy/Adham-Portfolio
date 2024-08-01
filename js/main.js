@@ -1,10 +1,14 @@
 let boxes = Array.from(document.querySelectorAll(".skills-box"));
+let index = 0;
 setInterval(() => {
-	let rand = Math.floor(Math.random() * boxes.length);
+	if (index >= boxes.length) {
+		index = 0;
+	}
 	boxes.forEach(function (b) {
 		b.classList.remove("active");
 	});
-	boxes[rand].classList.add("active");
+	boxes[index].classList.add("active");
+	index += 1;
 }, 2000);
 
 // // // // // // // // // // // // // // // // // // //
